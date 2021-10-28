@@ -44,9 +44,7 @@ function createPokemonCard(pokemon) {
 
 	const pokeInnerHTML = `
         <div class="img-container">
-            <img src="https://pokeapi.co/api/v2/pokemon/${
-							pokemon.sprites.front_default
-						}" alt="${name}" />
+            <img src="${pokemon.sprites.front_default}" alt="${name}" />
         </div>
         <div class="info">
             <span class="number">#${pokemon.id
