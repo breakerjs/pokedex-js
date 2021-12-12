@@ -1,5 +1,14 @@
+document.onload = () => {
+	Swal.fire({
+		icon: 'error',
+		title: 'Version Desactualizada!',
+		text: 'Puedes utilizar la nueva version o la antigua version.',
+		footer: '<a href="https://pokedex-nextjs-liard.vercel.app/">Ir a la nueva Pokedex</a>'
+	})
+}
+
 const poke_container = document.getElementById('poke_container');
-const pokemons_number = 600;
+const pokemons_number = 20;
 const colors = {
 	fire: '#FDDFDF',
 	grass: '#DEFDE0',
@@ -44,7 +53,7 @@ function createPokemonCard(pokemon) {
 
 	const pokeInnerHTML = `
         <div class="img-container">
-            <img src="${pokemon.sprites.front_default}" alt="${name}" />
+            <img src="${pokemon.sprites.front_default}" alt="${name}" /> // se realizo cambio porque se elimino la url de las imagenes --Franco
         </div>
         <div class="info">
             <span class="number">#${pokemon.id
@@ -61,3 +70,5 @@ function createPokemonCard(pokemon) {
 }
 
 fetchPokemons();
+
+
