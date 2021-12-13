@@ -1,5 +1,3 @@
-document.onload = alert('Pagina desactualizada, se recomienda acceder a la nueva pokedex, esta en mi Github (BreakerJS - PokedexNextJS)')
-
 const poke_container = document.getElementById('poke_container');
 const pokemons_number = 20;
 const colors = {
@@ -46,7 +44,7 @@ function createPokemonCard(pokemon) {
 
 	const pokeInnerHTML = `
         <div class="img-container">
-            <img src="${pokemon.sprites.front_default}" alt="${name}" />
+            <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${name}" />
         </div>
         <div class="info">
             <span class="number">#${pokemon.id
