@@ -44,7 +44,7 @@ function createPokemonCard(pokemon) {
 
 	const pokeInnerHTML = `
         <div class="img-container">
-            <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${name}" />
+            <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${name}" width="42"/>
         </div>
         <div class="info">
             <span class="number">#${pokemon.id
